@@ -47,7 +47,7 @@ class Scripture
     for (int i = 0; i < _words.Length; i++)
     {
         string notHidden = _words[i].GetDisplayText();
-        if (notHidden != new string('_', wordText.Length))
+        if (notHidden != new string('_', notHidden.Length))
         {
             return false; 
         }
